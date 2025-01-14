@@ -1,4 +1,7 @@
 .grid-item{
+    background-color: bisque;
+}
+.grid-item{
     display: flex;
     flex-direction: column;
 }
