@@ -1,13 +1,88 @@
-.grid-item{
-    background-color: bisque;
+body{
+    margin: 60px;
+    font-size: 18px;
+    background-color: rgb(43, 43, 43);
+    font-family: "Faculty Glyphic";
+    color: white;
 }
-.grid-item{
+h1{
+    text-align: center;
+    font-size: 40px;
+
+    font-family: 'Faculty Glyphic';
+    color: #ebdb86;
+
+}
+h2{
+    text-align: center;
+  color: #ebdb86;
+
+}
+.grid{
     display: flex;
-    flex-direction: row;
+    justify-content: space-between; /* Tilaa tasaisesti */
+    gap: 30px; /* Väli elementtien välillä */
+
 }
-img{
+
+.grid-item {
+
+    flex: 1; /* Joustavuus, vie yhtä paljon tilaa */
+    padding: 10px;
+}
+#noppa-ts{
+    width: 500px;
+}
+
+li {
+    margin-top: 5px; /* Väli rivien välillä */
+}
+.frontti{
+    width: 300px;
+}
+.frontti1{
+    width: 600px;
+}
+.frontti img{
+    display: flex;
+    justify-content: space-between;
+}
+.aws{
     width: 300px;
 }
 h3{
     color: cornflowerblue;
 }
+#testaus {
+    margin: 20px;
+}
+.aws-content{
+    display: flex;
+    align-items: flex-start; /* Kohdistaa elementit pystysuunnassa */
+    gap: 20px; /* Väli tekstin ja kuvan välillä */
+}
+.deploy{
+    height: 30px;
+    width: 500px;
+
+}
+#aws img{
+    width: 400px;
+}
+.testaus-content {
+    display: flex;
+    align-items: flex-start; /* Kohdistaa elementit pystysuunnassa */
+    gap: 20px; /* Väli tekstin ja kuvan välillä */
+}
+
+#testaus img{
+    width: 600px;
+    height: auto;
+}
+
+@font-face {
+    font-family: 'Faculty';
+    src:  url('font/FacultyGlyphic-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+  }

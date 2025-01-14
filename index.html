@@ -4,41 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap" rel="stylesheet">
+
     <title>Document</title>
 </head>
 <body>
     <h1>Ticorporate Portfolio</h1>
     <h2>Juho Leppäkangas</h2>
-
+    <div>
+        Tässä Ticorporate projektissa teimme pöytäroolipeleihin apusovelluksen, jota pelaajat pystyvät käyttämään pelin aikana avuksi. 
+    </div>
     <div id="Alku">
         <div class="grid">
-            <div class="grid-item">Mitä osasin alussa?</div>
-            <div class="grid-item"> mitä osaan nyt</div>
-        </div>
-        <div>
-            Tässä Ticorporate projektissa teimme pöytäroolipeleihin apusovelluksen, jota pelaajat pystyvät käyttämään pelin aikana avuksi. 
+            <h4 class="grid-item">Mitä osasin alussa?
+            <li>Perusteet frontista (html ja css)</li>
+            <li>Olin kuullut Elastic beanstalkista</li>
+            <li>E2E testaus ihan ok hallussa</li>
+            </h4>
+            <h4 class="grid-item"> mitä osaan nyt
+            <li>opin paljon frontendin ja backendin reitiyksistä.</li>
+            <li>Osaan viedä sovelluksen aws:sään + Konfiguraatiot</li>
+            <li>Ulkoasun muutoksissa varmempi ote</li>
+            </h4>
         </div>
     </div>
 
     <div id="Frontti">
-        <h3>Front-end</h3>
-        <p>
-            Toisena pääroolina minulla oli front-end. Alkuun tein jokaiselle random encounttereihin kaikille omat komponentit, mitkä sitten myöhemmin poistettiin. Huomattiin että siinä ei ole mitään järkeä.
-        </p>
+        <h2>Front-end</h2>
+        <p>Toisena pääroolina minulla oli front-end. Alkuun tein jokaiselle random encounttereihin kaikille omat komponentit, mitkä sitten myöhemmin poistettiin.
+            Huomattiin että siinä ei ole mitään järkeä.</p>
+        <p>En osaa niin hyvin typescriptiä, niin ne jäivät pääosin kaikki Jaakolle. Tästä syystä päädyttiin siihen että teen HTML ja CSS. Tein sovellukselle Navigointipalkin ja Footerin. Myös koko projektin ulkoasun CSS:llä Figma mallien perusteella, toki näihin tuli myöhemmin pieniä muutoksia.</p>
+        <h4>Ulkoasu</h4>
+        <p>Ulkosasu on tehty kokonaan CSS:llä. Käytin komponentteihin Angular Material Designia (napit, form fieldit, sivupalkit). Etusivulle esimerkiksi tein kuvakarusellin joka vaihtaa kuvaa ja nopalle animaation.</p>
+        <img class="frontti" src="/images/etusivu_portfolio.png" alt="">
+        <img class="frontti1" src="/images/footer_portfolio.png" alt="">
+        <img class="frontti" src="/images/gif_roll.gif" alt=""><br><br>
+        <br> Responsiivisuus on toteutettu Material design elementeillä ja Media queryillä. <br><br>
+        <img id="noppa-ts" src="/images/noppa_ts.png" alt="">
+        <img src="/images/noppa_css.png" alt="">
+        <img src="/images/media_query.png" alt="">
     </div>
 
     <div id="aws">
-        <h3>AWS</h3>
-        <p>Ensiksi loin kaaviokuvan mahdollisesta infrastruktuurista</p>
-        <img src="/images/kaaviokuva_portfolio.png" alt="">
-
+        <h2>AWS</h2>
+        <div class="aws-content">
+            <div class="aws-text">
+                <p>Ensiksi loin kaaviokuvan mahdollisesta infrastruktuurista. Päätin valita Elastic beanstalkin tähän. Latasin EB CLI:n ja kokeilin esimerkkisovelluksella että homma pelittää. <br> <br>
+                Aluksi lähdin rakentamaan ympäristöä EB CLI:llä, se ei onnistunut AWS uuden päivityksen myötä (Launch configuration error). 
+                <br> Sain ympäristön pystyyn AWS konsolista.</p>
+                <p>Frontendiin environments kansio, jossa kerrottu frontin URL. -> dist kansion Backend tiedoston juureen -> Tarvittavat reitiykset ja Cors policyt -> EB deploy. <br>
+                Sivulle tehty myös Self Sign SSl sertifikaatti, jotta https toimii.</p>
+                <div>Suurimmat ongelmat olivat Front-endin ja backendin väliset reitit, jotka saatiin viimein toimimaan kaiken sähellyksen jälkeen.</div><br>
+                <img src="/images/corssi.png" alt="">
+                <img src="/images/reitti.png" alt="">
+                <p>Self sign sertifikaatti</p>
+                <img src="/images/ssl_sert.png" alt="">
+            </div>
+        <img class="aws" src="/images/kaaviokuva_portfolio.png" alt="">
+        </div>
     </div>
 
     <div id="testaus">
-        <h3>Testaus</h3>
-        <p>Testaus on toteutettu "Blackbox" tyyppisesti Cypressillä. Yleisesti olemme testanneet itse että toiminnot ja napit toimivat.</p>
-        <p>Testaus tuli itselle uutena roolina ticorporaten lopulla mutta kaikki olennainen on testattu toimivaksi</p>
-        <img src="/images/testi_portfoliota_varten.png" alt="">
+        <h2>Testaus</h2>
+        <div class="testaus-content">
+            <div class="testaus-text">
+                <p>Testaus on toteutettu "Blackbox" tyyppisesti Cypressillä. Yleisesti olemme testanneet itse että toiminnot ja napit toimivat.</p>
+                <p>Testaus tuli itselle uutena roolina ticorporaten lopulla mutta kaikki olennainen on testattu toimivaksi</p>
+            </div>
+            <img id="testaus" src="/images/testi_portfoliota_varten.png" alt="">
+        </div>
+    </div>
+    <div id="oma reflektio">
+
     </div>
 </body>
 </html>
