@@ -9,50 +9,83 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Ticorporate Portfolio</h1>
+    <div id="jee">
+        <h1>Ticorporate Portfolio</h1>
+        <img style="width: 100px; padding-left: 10px;" src="/images/Logo_oikea.png" alt="">
+    </div>
+
+
     <h2>Juho Leppäkangas</h2>
     <div>
-        Tässä Ticorporate projektissa teimme pöytäroolipeleihin apusovelluksen, jota pelaajat pystyvät käyttämään pelin aikana avuksi. 
+        Tässä Ticorporate projektissa teimme pöytäroolipeleihin apusovelluksen, jota pelaajat pystyvät käyttämään pelin aikana avuksi ja generoimaan eri tilanteita.
     </div>
     <div id="Alku">
-        <div class="grid">
-            <h4 class="grid-item">Mitä osasin alussa?
+        <div class="grid-item">
+          <h4>Mitä osasin alussa?</h4>
+          <ul>
             <li>Perusteet frontista (html ja css)</li>
             <li>Olin kuullut Elastic beanstalkista</li>
             <li>E2E testaus ihan ok hallussa</li>
-            </h4>
-            <h4 class="grid-item"> mitä osaan nyt
-            <li>opin paljon frontendin ja backendin reitiyksistä.</li>
-            <li>Osaan viedä sovelluksen aws:sään + Konfiguraatiot</li>
-            <li>Ulkoasun muutoksissa varmempi ote</li>
-            </h4>
+          </ul>
         </div>
-    </div>
+        <div class="grid-item">
+          <h4>Mitä osaan nyt?</h4>
+          <ul>
+            <li>Sovelluksen </li>
+            <li>Elastic beanstalk + Konfiguraatiot</li>
+            <li>Ulkoasun muutoksissa varmempi ote</li>
+          </ul>
+        </div>
+        <div class="grid-item">
+            <h4>Tavoitteet jotka toteutui</h4>
+            <ul>
+              <li>Päätoiminnot toimii</li>
+              <li>AWS siirto onnistui</li>
+              <li>Testaus tehty</li>
+            </ul>
+          </div>
+          <div class="grid-item">
+            <h4>Tavoitteet jotka jäivät toteuttamatta</h4>
+            <ul>
+              <li>Joitain sovelluksen osia mm. aarre generaattori, tehtävän antaja</li>
+              <li>CI/CD julkaisuputki</li>
 
-    <div id="Frontti">
+            </ul>
+          </div>
+      </div>
+
+      <div id="Frontti">
         <h2>Front-end</h2>
-        <p>Toisena pääroolina minulla oli front-end. Alkuun tein jokaiselle random encounttereihin kaikille omat komponentit, mitkä sitten myöhemmin poistettiin.
-            Huomattiin että siinä ei ole mitään järkeä.</p>
-        <p>En osaa niin hyvin typescriptiä, niin ne jäivät pääosin kaikki Jaakolle. Tästä syystä päädyttiin siihen että teen HTML ja CSS. Tein sovellukselle Navigointipalkin ja Footerin. Myös koko projektin ulkoasun CSS:llä Figma mallien perusteella, toki näihin tuli myöhemmin pieniä muutoksia.</p>
+        <p>Toisena pääroolina minulla oli front-end. </p>
+        <p>Pääosin tekeminen oli HTML ja CSS. Tein sovellukselle Navigointipalkin ja Footerin. Myös koko projektin ulkoasun CSS:llä Figma mallien perusteella.</p>
         <h4>Ulkoasu</h4>
-        <p>Ulkosasu on tehty kokonaan CSS:llä. Käytin komponentteihin Angular Material Designia (napit, form fieldit, sivupalkit). Etusivulle esimerkiksi tein kuvakarusellin joka vaihtaa kuvaa ja nopalle animaation.</p>
-        <img class="frontti" src="/images/etusivu_portfolio.png" alt="">
-        <img class="frontti1" src="/images/footer_portfolio.png" alt="">
-        <img class="frontti" src="/images/gif_roll.gif" alt=""><br><br>
-        <br> Responsiivisuus on toteutettu Material design elementeillä ja Media queryillä. <br><br>
-        <img id="noppa-ts" src="/images/noppa_ts.png" alt="">
-        <img src="/images/noppa_css.png" alt="">
-        <img src="/images/media_query.png" alt="">
-    </div>
+        <p>Ulkoasu on tehty kokonaan CSS:llä. Käytin komponentteihin Angular Material Designia (napit, form fieldit, sivupalkit). Etusivulle esimerkiksi tein kuvakarusellin, joka vaihtaa kuvaa, ja nopalle animaation.</p>
+        <p>Responsiivisuus on toteutettu Material Design -elementeillä ja Media Queryillä.</p>
+    
+        <!-- Kuvien gridi -->
+        <div class="image-grid">
+          <img src="/images/etusivu_portfolio.png" alt="Etusivu">
+          <img class="footer-wide" src="/images/footer_portfolio.png" alt="Footer">
+          <img src="/images/gif_roll.gif" alt="Gif Roll">
+          <img src="/images/rolling_ts.png" alt="Rolling TS">
+          <img src="/images/noppa_css.png" alt="Noppa CSS">
+          <img src="/images/media_query.png" alt="Media Query">
+        </div>
+        <div class="img-grid">
+            <img src="/images/alkutilanne.png" alt="">
+            <img style="width: 40px;" src="/images/right-arrow.png" alt="">
+            <img src="/images/lopputilanne.png" alt="">
+        </div>
+      </div>
 
     <div id="aws">
         <h2>AWS</h2>
         <div class="aws-content">
             <div class="aws-text">
-                <p>Ensiksi loin kaaviokuvan mahdollisesta infrastruktuurista. Päätin valita Elastic beanstalkin tähän. Latasin EB CLI:n ja kokeilin esimerkkisovelluksella että homma pelittää. <br> <br>
+                <p>Ensiksi loin kaaviokuvan mahdollisesta infrastruktuurista. Päätin valita Elastic beanstalkin tähän. <br> <br>
                 Aluksi lähdin rakentamaan ympäristöä EB CLI:llä, se ei onnistunut AWS uuden päivityksen myötä (Launch configuration error). 
                 <br> Sain ympäristön pystyyn AWS konsolista.</p>
-                <p>Frontendiin environments kansio, jossa kerrottu frontin URL. -> dist kansion Backend tiedoston juureen -> Tarvittavat reitiykset ja Cors policyt -> EB deploy. <br>
+                <p>Frontendiin environments kansio, jossa kerrottu frontin URL. -> dist kansion Backendiin -> Tarvittavat reitiykset ja Cors policyt -> EB deploy. <br>
                 Sivulle tehty myös Self Sign SSl sertifikaatti, jotta https toimii.</p>
                 <div>Suurimmat ongelmat olivat Front-endin ja backendin väliset reitit, jotka saatiin viimein toimimaan kaiken sähellyksen jälkeen.</div><br>
                 <img src="/images/corssi.png" alt="">
@@ -71,11 +104,15 @@
                 <p>Testaus on toteutettu "Blackbox" tyyppisesti Cypressillä. Yleisesti olemme testanneet itse että toiminnot ja napit toimivat.</p>
                 <p>Testaus tuli itselle uutena roolina ticorporaten lopulla mutta kaikki olennainen on testattu toimivaksi</p>
             </div>
-            <img id="testaus" src="/images/testi_portfoliota_varten.png" alt="">
+            <img id="testaus1" src="/images/testi_portfoliota_varten.png" alt="">
         </div>
     </div>
-    <div id="oma reflektio">
-
+    <div id="oma-reflektio">
+        <h2>Oma reflektio</h2>
+        <p>Tulevaisuudessa haluaisin kehittää pilviosaamista. Opintojakso kehitti paljon muunmuassa scrum prosessista ja fullstack sovelluksen toiminnasta ja miten se saadaan laitettua pilveen pyörimään.</p>
+        <p>Tavoitteena hankkia sertifikaatit kehittyäkseen(cloud practisioner & solutions architect?).</p>
+        <p>Vahvuutena minulla on tiimityöskentely, pilviosaaminen ja ulkoasu muutokset.</p>
+        <p>Valitsin nämä dokumentit, koska ne kuvasi omaa työtä parhaiten.</p>
     </div>
 </body>
 </html>
