@@ -9,110 +9,200 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="jee">
-        <h1>Ticorporate Portfolio ja myös oma</h1>
-        <img style="width: 100px; padding-left: 10px;" src="/images/Logo_oikea.png" alt="">
+  <nav class="navbar">
+  <div class="nav-container">
+    <a href="front.html" class="nav-logo">Juho Leppäkangas</a>
+    <div class="nav-links">
+      <a href="front.html">Etusivu</a>
+      <a href="index.html">JAMK Ticorporate Portfolio</a>
+    </div>
+  </div>
+</nav>
+    <section class="hero">
+
+  </div>
+  <h1>JAMK Ticorporate Portfolio</h1>
+  <h2>Juho Leppäkangas</h2>
+  <img src="images/Logo_oikea.png" alt="Logo">
+  <p>
+    Projektissa toteutimme pöytäroolipeleihin apusovelluksen, jota pelaajat
+    voivat käyttää pelin aikana eri tilanteiden generointiin.
+  </p>
+</section>
+    <section>
+  <h2>Projektin kehitys</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h4>Mitä osasin alussa?</h4>
+      <ul>
+        <li>Perusteet frontista (HTML & CSS)</li>
+        <li>Elastic Beanstalkin perusteet</li>
+        <li>E2E testaus</li>
+      </ul>
     </div>
 
-
-    <h2>Juho Leppäkangas</h2>
-    <div>
-        Tässä Ticorporate projektissa teimme pöytäroolipeleihin apusovelluksen, jota pelaajat pystyvät käyttämään pelin aikana avuksi ja generoimaan eri tilanteita.
+    <div class="card">
+      <h4>Mitä osaan nyt?</h4>
+      <ul>
+        <li>Kokonaisarkkitehtuurin ymmärrys</li>
+        <li>Elastic Beanstalk & konfiguraatiot</li>
+        <li>Vahvempi UI-osaaminen</li>
+      </ul>
     </div>
-    <div id="Alku">
-        <div class="grid-item">
-          <h4>Mitä osasin alussa?</h4>
-          <ul>
-            <li>Perusteet frontista (html ja css)</li>
-            <li>Olin kuullut Elastic beanstalkista</li>
-            <li>E2E testaus ihan ok hallussa</li>
-          </ul>
-        </div>
-        <div class="grid-item">
-          <h4>Mitä osaan nyt?</h4>
-          <ul>
-            <li>Sovelluksen kokonaisuuden ymmärrys</li>
-            <li>Elastic beanstalk + Konfiguraatiot</li>
-            <li>Ulkoasun muutoksissa varmempi ote</li>
-          </ul>
-        </div>
-        <div class="grid-item">
-            <h4>Tavoitteet jotka toteutui</h4>
-            <ul>
-              <li>Päätoiminnot toimii</li>
-              <li>AWS siirto onnistui</li>
-              <li>Testaus tehty</li>
-            </ul>
+
+    <div class="card">
+      <h4>Toteutuneet tavoitteet</h4>
+      <ul>
+        <li>Päätoiminnot valmiina</li>
+        <li>AWS-siirto onnistui</li>
+        <li>Testaus toteutettu</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>Kehitettävää</h4>
+      <ul>
+        <li>Aarregeneraattori</li>
+        <li>Tehtävän antaja</li>
+        <li>CI/CD-putki</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="front-section">
+  <h2>Front-end</h2>
+
+  <div class="front-intro">
+    <p>
+      Toimin projektissa front-end -kehittäjänä. Vastasin käyttöliittymän
+      toteutuksesta HTML- ja CSS-teknologioilla Figma-mallien pohjalta.
+    </p>
+    <p>
+      Hyödynsin Angular Material -komponentteja ja toteutin responsiivisuuden
+      media queryillä.
+    </p>
+  </div>
+
+  <h4>Käyttöliittymä</h4>
+
+  <div class="image-grid">
+    <img src="images/etusivu_portfolio.png" alt="Etusivu">
+    <img src="images/footer_portfolio.png" alt="Footer">
+    <img src="images/gif_roll.gif" alt="Gif Roll">
+    <img src="images/rolling_ts.png" alt="Rolling TS">
+    <img src="images/noppa_css.png" alt="Noppa CSS">
+    <img src="images/media_query.png" alt="Media Query">
+  </div>
+
+  <h4>Ulkoasun kehitys</h4>
+
+  <div class="before-after">
+  <div class="ba-item">
+    <h5>Alkutilanne</h5>
+    <img src="images/alkutilanne.png" alt="Alkutilanne">
+  </div>
+
+  <div class="arrow">→</div>
+
+  <div class="ba-item">
+    <h5>Lopputilanne</h5>
+    <img src="images/lopputilanne.png" alt="Lopputilanne">
+  </div>
+</div>
+</section>
+
+    <section class="aws-section">
+  <h2>AWS Deployment</h2>
+
+  <!-- Kaaviokuva highlight -->
+  <div class="aws-architecture">
+    <img src="images/kaaviokuva_portfolio.png" alt="AWS arkkitehtuuri">
+  </div>
+
+  <!-- Teksti -->
+  <div class="aws-content">
+    <div class="aws-block">
+      <h4>Ympäristön rakentaminen</h4>
+      <p>
+        Suunnittelin ensin infrastruktuurin arkkitehtuurikaavion ja valitsin
+        alustaksi Elastic Beanstalkin.
+      </p>
+      <p>
+        EB CLI:n kautta ympäristön luonti ei onnistunut AWS:n päivityksen
+        vuoksi (Launch configuration error), joten toteutin ympäristön AWS
+        konsolin kautta.
+      </p>
+    </div>
+
+    <div class="aws-block">
+      <h4>Deploy & konfiguraatio</h4>
+      <p>
+        Frontendin environments-konfiguraatio, buildattu dist-kansio backendille,
+        reititykset ja CORS-policyt määritettiin ennen Elastic Beanstalk -deployta.
+      </p>
+      <p>
+        HTTPS-yhteys toteutettiin self-signed SSL-sertifikaatilla.
+      </p>
+    </div>
+  </div>
+
+  <!-- Tekniset haasteet -->
+  <div class="aws-issues">
+    <h4>Haasteet</h4>
+    <p>
+      Suurimmat ongelmat liittyivät frontendin ja backendin välisiin reitityksiin,
+      jotka saatiin lopulta toimimaan konfiguraatiomuutoksilla.
+    </p>
+
+    <div class="aws-gallery">
+      <img src="images/corssi.png" alt="CORS">
+      <img src="images/reitti.png" alt="Reititys">
+      <img src="images/ssl_sert.png" alt="SSL">
+    </div>
+  </div>
+</section>
+    <section class="test-section">
+      <h2>Testaus</h2>
+
+        <div class="test-content">
+          <div class="test-text">
+            <p>
+              Testaus toteutettiin blackbox-tyyppisesti Cypressillä.
+              Testasimme järjestelmällisesti, että toiminnot ja käyttöliittymän
+              elementit toimivat odotetusti.
+            </p>
+            <p>
+              Testaus tuli itselleni uutena vastuualueena projektin loppuvaiheessa,
+              mutta kaikki keskeiset toiminnallisuudet saatiin validoitua toimiviksi.
+            </p>
           </div>
-          <div class="grid-item">
-            <h4>Tavoitteet jotka jäivät toteuttamatta</h4>
-            <ul>
-              <li>Joitain sovelluksen osia mm. aarre generaattori, tehtävän antaja</li>
-              <li>CI/CD julkaisuputki</li>
 
-            </ul>
-          </div>
-      </div>
+          <img src="images/testi_portfoliota_varten.png" alt="Cypress testaus">
+        </div>
+    </section>
+    <section class="reflection-section">
+  <h2>Oma reflektio</h2>
 
-      <div id="Frontti">
-        <h2>Front-end</h2>
-        <p>Toisena pääroolina minulla oli front-end. </p>
-        <p>Pääosin tekeminen oli HTML ja CSS. Myös koko projektin ulkoasun CSS:llä Figma mallien perusteella.</p>
-        <h4>Ulkoasu</h4>
-        <p>Ulkoasu on tehty kokonaan CSS:llä. Käytin komponentteihin Angular Material Designia.</p>
-        <p>Responsiivisuus on toteutettu Material Design -elementeillä ja Media Queryillä.</p>
-    
-        <!-- Kuvien gridi -->
-        <div class="image-grid">
-          <img src="/images/etusivu_portfolio.png" alt="Etusivu">
-          <img class="footer-wide" src="/images/footer_portfolio.png" alt="Footer">
-          <img src="/images/gif_roll.gif" alt="Gif Roll">
-          <img src="/images/rolling_ts.png" alt="Rolling TS">
-          <img src="/images/noppa_css.png" alt="Noppa CSS">
-          <img src="/images/media_query.png" alt="Media Query">
-        </div>
-        <div class="img-grid">
-            <img src="/images/alkutilanne.png" alt="">
-            <img style="width: 40px;" src="/images/right-arrow.png" alt="">
-            <img src="/images/lopputilanne.png" alt="">
-        </div>
-      </div>
+  <div class="reflection-content">
+    <p>
+      Tulevaisuudessa haluan syventää pilviosaamistani. Projekti kehitti
+      ymmärrystäni scrum-prosessista sekä fullstack-sovelluksen
+      kokonaisuudesta ja sen viemisestä pilviympäristöön.
+    </p>
 
-    <div id="aws">
-        <h2>AWS</h2>
-        <div class="aws-content">
-            <div class="aws-text">
-                <p>Ensiksi loin kaaviokuvan mahdollisesta infrastruktuurista. Päätin valita Elastic beanstalkin tähän. <br> <br>
-                Aluksi lähdin rakentamaan ympäristöä EB CLI:llä, se ei onnistunut AWS uuden päivityksen myötä (Launch configuration error). 
-                <br> Sain ympäristön pystyyn AWS konsolista.</p>
-                <p>Frontendiin environments kansio, jossa kerrottu frontin URL. -> dist kansion Backendiin -> Tarvittavat reitiykset ja Cors policyt -> EB deploy. <br>
-                Sivulle tehty myös Self Sign SSl sertifikaatti, jotta https toimii.</p>
-                <div>Suurimmat ongelmat olivat Front-endin ja backendin väliset reitit, jotka saatiin viimein toimimaan kaiken sähellyksen jälkeen.</div><br>
-                <img src="/images/corssi.png" alt="">
-                <img src="/images/reitti.png" alt="">
-                <p>Self sign sertifikaatti</p>
-                <img src="/images/ssl_sert.png" alt="">
-            </div>
-        <img class="aws" src="/images/kaaviokuva_portfolio.png" alt="">
-        </div>
-    </div>
+    <p>
+      Tavoitteenani on suorittaa AWS-sertifikaatteja
+      (Cloud Practitioner ja Solutions Architect) kehittääkseni
+      osaamistani entisestään.
+    </p>
 
-    <div id="testaus">
-        <h2>Testaus</h2>
-        <div class="testaus-content">
-            <div class="testaus-text">
-                <p>Testaus on toteutettu "Blackbox" tyyppisesti Cypressillä. Yleisesti olemme testanneet itse että toiminnot ja napit toimivat.</p>
-                <p>Testaus tuli itselle uutena roolina ticorporaten lopulla mutta kaikki olennainen on testattu toimivaksi</p>
-            </div>
-            <img id="testaus1" src="/images/testi_portfoliota_varten.png" alt="">
-        </div>
-    </div>
-    <div id="oma-reflektio">
-        <h2>Oma reflektio</h2>
-        <p>Tulevaisuudessa haluaisin kehittää pilviosaamista. Opintojakso kehitti paljon muunmuassa scrum prosessista ja fullstack sovelluksen toiminnasta ja miten se saadaan laitettua pilveen pyörimään.</p>
-        <p>Tavoitteena hankkia sertifikaatit kehittääkseen AWS osaamista(cloud practisioner & solutions architect?).</p>
-        <p>Vahvuutena minulla on tiimityöskentely, pilviosaaminen ja sovelluksen ulkoasu.</p>
-        <p>Valitsin nämä dokumentit, koska ne kuvasi omaa työtä parhaiten.</p>
-    </div>
+    <p>
+      Vahvuuksiani ovat tiimityöskentely, pilviympäristöjen ymmärrys
+      sekä käyttöliittymän toteutus ja viimeistely.
+    </p>
+  </div>
+</section>
 </body>
+
 </html>
