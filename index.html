@@ -1,208 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juho Leppäkangas – Etusivu</title>
+  <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap" rel="stylesheet">
 
-    <title>Document</title>
 </head>
 <body>
-  <nav class="navbar">
+
+<!-- NAVIGAATIO -->
+<nav class="navbar">
   <div class="nav-container">
-    <a href="front.html" class="nav-logo">Juho Leppäkangas</a>
+    <a href="index.html" class="nav-logo">Juho Leppäkangas</a>
     <div class="nav-links">
-      <a href="front.html">Etusivu</a>
-      <a href="index.html">JAMK Ticorporate Portfolio</a>
+      <a href="index.html">Etusivu</a>
+      <a href="portfolio.html">JAMK ticorporate Portfolio</a>
     </div>
   </div>
 </nav>
-    <section class="hero">
 
-  </div>
-  <h1>JAMK Ticorporate Portfolio</h1>
-  <h2>Juho Leppäkangas</h2>
-  <img src="images/Logo_oikea.png" alt="Logo">
-  <p>
-    Projektissa toteutimme pöytäroolipeleihin apusovelluksen, jota pelaajat
-    voivat käyttää pelin aikana eri tilanteiden generointiin.
-  </p>
-</section>
-    <section>
-  <h2>Projektin kehitys</h2>
-  <div class="card-grid">
-    <div class="card">
-      <h4>Mitä osasin alussa?</h4>
-      <ul>
-        <li>Perusteet frontista (HTML & CSS)</li>
-        <li>Elastic Beanstalkin perusteet</li>
-        <li>E2E testaus</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h4>Mitä osaan nyt?</h4>
-      <ul>
-        <li>Kokonaisarkkitehtuurin ymmärrys</li>
-        <li>Elastic Beanstalk & konfiguraatiot</li>
-        <li>Vahvempi UI-osaaminen</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h4>Toteutuneet tavoitteet</h4>
-      <ul>
-        <li>Päätoiminnot valmiina</li>
-        <li>AWS-siirto onnistui</li>
-        <li>Testaus toteutettu</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h4>Kehitettävää</h4>
-      <ul>
-        <li>Aarregeneraattori</li>
-        <li>Tehtävän antaja</li>
-        <li>CI/CD-putki</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-      <section class="front-section">
-  <h2>Front-end</h2>
-
-  <div class="front-intro">
-    <p>
-      Toimin projektissa front-end -kehittäjänä. Vastasin käyttöliittymän
-      toteutuksesta HTML- ja CSS-teknologioilla Figma-mallien pohjalta.
-    </p>
-    <p>
-      Hyödynsin Angular Material -komponentteja ja toteutin responsiivisuuden
-      media queryillä.
-    </p>
-  </div>
-
-  <h4>Käyttöliittymä</h4>
-
-  <div class="image-grid">
-    <img src="images/etusivu_portfolio.png" alt="Etusivu">
-    <img src="images/footer_portfolio.png" alt="Footer">
-    <img src="images/gif_roll.gif" alt="Gif Roll">
-    <img src="images/rolling_ts.png" alt="Rolling TS">
-    <img src="images/noppa_css.png" alt="Noppa CSS">
-    <img src="images/media_query.png" alt="Media Query">
-  </div>
-
-  <h4>Ulkoasun kehitys</h4>
-
-  <div class="before-after">
-  <div class="ba-item">
-    <h5>Alkutilanne</h5>
-    <img src="images/alkutilanne.png" alt="Alkutilanne">
-  </div>
-
-  <div class="arrow">→</div>
-
-  <div class="ba-item">
-    <h5>Lopputilanne</h5>
-    <img src="images/lopputilanne.png" alt="Lopputilanne">
-  </div>
-</div>
-</section>
-
-    <section class="aws-section">
-  <h2>AWS Deployment</h2>
-
-  <!-- Kaaviokuva highlight -->
-  <div class="aws-architecture">
-    <img src="images/kaaviokuva_portfolio.png" alt="AWS arkkitehtuuri">
-  </div>
-
-  <!-- Teksti -->
-  <div class="aws-content">
-    <div class="aws-block">
-      <h4>Ympäristön rakentaminen</h4>
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1>Juho Leppäkangas</h1>
+      <h2>Junior Cloud Engineer & Data Engineer</h2>
       <p>
-        Suunnittelin ensin infrastruktuurin arkkitehtuurikaavion ja valitsin
-        alustaksi Elastic Beanstalkin.
-      </p>
-      <p>
-        EB CLI:n kautta ympäristön luonti ei onnistunut AWS:n päivityksen
-        vuoksi (Launch configuration error), joten toteutin ympäristön AWS
-        konsolin kautta.
+        AWS pilvipalveluihin erikoistunut tietojenkäsittelyn tradenomi. Harjoittelussa suoritin <strong>AWS CloudOps Associate</strong> -sertifikaatin, jonka myötä sain tärkeää tietoa AWS-ympäristön hallinnasta ja ylläpidosta, palveluiden monitoroinnista sekä AWS-palveluiden tietoturvasta.
       </p>
     </div>
-
-    <div class="aws-block">
-      <h4>Deploy & konfiguraatio</h4>
-      <p>
-        Frontendin environments-konfiguraatio, buildattu dist-kansio backendille,
-        reititykset ja CORS-policyt määritettiin ennen Elastic Beanstalk -deployta.
-      </p>
-      <p>
-        HTTPS-yhteys toteutettiin self-signed SSL-sertifikaatilla.
-      </p>
-    </div>
-  </div>
-
-  <!-- Tekniset haasteet -->
-  <div class="aws-issues">
-    <h4>Haasteet</h4>
-    <p>
-      Suurimmat ongelmat liittyivät frontendin ja backendin välisiin reitityksiin,
-      jotka saatiin lopulta toimimaan konfiguraatiomuutoksilla.
-    </p>
-
-    <div class="aws-gallery">
-      <img src="images/corssi.png" alt="CORS">
-      <img src="images/reitti.png" alt="Reititys">
-      <img src="images/ssl_sert.png" alt="SSL">
+    <div class="hero-images">
+      <img src="images/cloudops.png" alt="CloudOps" title="AWS CloudOps">
+      <img src="images/cloudprac.png" alt="CloudPractitioner" title="AWS Cloud Practitioner">
     </div>
   </div>
 </section>
-    <section class="test-section">
-      <h2>Testaus</h2>
 
-        <div class="test-content">
-          <div class="test-text">
-            <p>
-              Testaus toteutettiin blackbox-tyyppisesti Cypressillä.
-              Testasimme järjestelmällisesti, että toiminnot ja käyttöliittymän
-              elementit toimivat odotetusti.
-            </p>
-            <p>
-              Testaus tuli itselleni uutena vastuualueena projektin loppuvaiheessa,
-              mutta kaikki keskeiset toiminnallisuudet saatiin validoitua toimiviksi.
-            </p>
-          </div>
+<!-- TYÖHARJOITTELU -->
+<section class="experience-section">
+  <h2>Työharjoittelu</h2>
+  <div class="experience-content">
+    <div class="experience-text">
+      <p>
+        Harjoittelussa pääsin tekemään töitä <strong>AWS Security Lake</strong> -palvelun, <strong>Lake Formation</strong> -oikeuksien ja <strong>Athena SQL</strong> -kyselyiden parissa. Visualisoin haavoittuvuuksia ja tietoa <strong>Quicksightillä</strong>, jolloin dashboardit päivittyivät automaattisesti.
+      </p>
+      <ul>
+        <li>AWS Security Lake ja Lake Formation</li>
+        <li>Athena SQL -kyselyt</li>
+        <li>Quicksight dashboardien luonti ja visualisointi</li>
+        <li>Monitorointi ja tietoturva CloudOps -näkökulmasta</li>
+      </ul>
+    </div>
+    <div class="experience-images">
+      <img src="images/securtiity.png" alt="Quicksight dashboard" title="Dashboard">
 
-          <img src="images/testi_portfoliota_varten.png" alt="Cypress testaus">
-        </div>
-    </section>
-    <section class="reflection-section">
-  <h2>Oma reflektio</h2>
-
-  <div class="reflection-content">
-    <p>
-      Tulevaisuudessa haluan syventää pilviosaamistani. Projekti kehitti
-      ymmärrystäni scrum-prosessista sekä fullstack-sovelluksen
-      kokonaisuudesta ja sen viemisestä pilviympäristöön.
-    </p>
-
-    <p>
-      Tavoitteenani on suorittaa AWS-sertifikaatteja
-      (Cloud Practitioner ja Solutions Architect) kehittääkseni
-      osaamistani entisestään.
-    </p>
-
-    <p>
-      Vahvuuksiani ovat tiimityöskentely, pilviympäristöjen ymmärrys
-      sekä käyttöliittymän toteutus ja viimeistely.
-    </p>
+    </div>
   </div>
 </section>
+
+<!-- OPINNÄYTETYÖ -->
+<section class="experience-section">
+  <h2>Opinnäytetyö</h2>
+  <div class="experience-content">
+    <div class="experience-text">
+      <p>
+        Opinnäytetyössä tutkin <strong>AWS Datajärvien</strong> toimintaa. Keräsin ja analysoin CSV-datasetin, hain päivittäin päivittyvää dataa <strong>Sportradar API</strong>:sta ja visualisoin tiedot Quicksight-dashboardeihin.
+      </p>
+      <ul>
+        <li>AWS Datajärvet ja Lake Formation</li>
+        <li>CSV-datasetin keruu ja analysointi</li>
+        <li>Sportradar API -datan automaattinen haku Lambda funktiolla, jota pyöräytetään kello 7:00 aamulla</li>
+        <li>Quicksight dashboardien visualisointi</li>
+      </ul>
+    </div>
+    <div class="experience-images">
+      <img src="images/QS_2.jpg"Datajärvi kaavio" title="Datajärvi">
+      <img src="images/QS_3.jpg" alt="Quicksight analyysi" title="Analyysi">
+      <img src="images/QS_kaavio.jpg" alt="Quicksight analyysi" title="Analyysi">
+    </div>
+  </div>
+</section>
+
+<!-- CTA nappi Portfolioon -->
+<section style="text-align:center; margin:60px 0;">
+  <a href="portfolio.html" class="cta-button">Tutustu Ticorporate projektiin</a>
+</section>
+
 </body>
-
 </html>

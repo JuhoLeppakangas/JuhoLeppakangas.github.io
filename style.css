@@ -315,7 +315,7 @@ li {
 .aws-gallery img:hover {
   transform: scale(1.05);
 }
-/* Takaisin etusivulle -nappi index.html:ssä */
+/* Takaisin etusivulle -nappi portfolio.html:ssä */
 .back-button {
   text-align: center;
   margin-bottom: 30px;
