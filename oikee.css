@@ -118,20 +118,6 @@ section { padding: 4.5rem 0; }
 .tags li { background: var(--surface); border: 1.5px solid var(--line); border-radius: 999px; padding: .15rem .8rem; font-size: .9rem; }
 .band .tags li { background: var(--paper); }
 
-/* ---------- Kuvagalleria (opinnäytetyö) ---------- */
-.gallery {
-  display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.2rem;
-  margin: 2rem 0;
-}
-.gallery figure { margin: 0; }
-.gallery img {
-  width: 100%; aspect-ratio: 4 / 3; object-fit: cover;
-  background: var(--line); border: 2px solid var(--ink); border-radius: var(--radius);
-}
-.gallery figcaption { margin-top: .5rem; font-size: .9rem; color: var(--muted); }
-.gallery figure:nth-child(odd) img { box-shadow: 6px 6px 0 var(--sun); }
-@media (max-width: 500px) { .gallery { grid-template-columns: 1fr; } }
-
 /* ---------- Projektit ---------- */
 .page-head { padding: 4.5rem 0 1rem; }
 .project { display: grid; grid-template-columns: 1.1fr 1fr; gap: 3rem; align-items: center; padding: 3rem 0; border-top: 1px solid var(--line); }
@@ -146,40 +132,10 @@ section { padding: 4.5rem 0; }
 .shots.pair img:first-child { grid-column: 1 / -1; }
 .meta { color: var(--muted); font-weight: 500; }
 
-
-/* ---------- Projektisivun osiot ---------- */
-.image-grid, .aws-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.2rem; align-items: start; }
-.image-grid img, .aws-gallery img, .aws-architecture img, .test-content > img, .ba-item img {
-  width: 100%; height: auto; background: var(--line);
-  border: 2px solid var(--ink); border-radius: var(--radius);
-}
-h3.sub { margin-top: 3rem; }
-.front-intro { margin-bottom: 2.5rem; }
-.before-after { display: grid; grid-template-columns: 1fr auto 1fr; gap: 1.5rem; align-items: center; }
-.ba-item { margin: 0; }
-.ba-item figcaption { font-family: var(--font-head); font-weight: 800; margin-bottom: .6rem; }
-.arrow { font-family: var(--font-head); font-size: 2.8rem; color: var(--blue); }
-.aws-architecture { margin: 0 auto 3rem; max-width: 640px; }
-.aws-architecture img { max-height: 520px;  box-shadow: 10px 10px 0 var(--sun); background: var(--surface); }
-.aws-content { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
-.aws-block { background: var(--paper); border: 2px solid var(--ink); border-radius: var(--radius); padding: 1.6rem; }
-.aws-block p:last-child { margin-bottom: 0; }
-.aws-issues { margin-top: 3rem; }
-.test-content { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
-
-@media (max-width: 800px) {
-  .before-after, .aws-content, .test-content { grid-template-columns: 1fr; }
-  .arrow { transform: rotate(90deg); justify-self: center; }
-}
-
 /* ---------- Alatunniste ---------- */
 footer { padding: 3rem 0; border-top: 1px solid var(--line); }
 footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; }
 footer p { margin: 0; }
-.contact { list-style: none; margin: 0; padding: 0; display: grid; gap: .8rem; }
-.contact li { display: flex; align-items: center; gap: .8rem; }
-.contact img, .contact svg { width: 28px; height: 28px; object-fit: contain; flex-shrink: 0; }
-.contact svg { color: var(--ink); }
 
 /* ---------- Mobiili ---------- */
 @media (max-width: 800px) {

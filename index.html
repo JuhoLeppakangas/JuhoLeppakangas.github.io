@@ -2,101 +2,166 @@
 <html lang="fi">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Juho Leppäkangas – Etusivu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Juho Leppäkangas – Portfolio</title>
+  <meta name="description" content="Etunimi Sukunimi – ICT-alan opiskelija ja AWS-sertifioitu. Työharjoittelu, opinnäytetyö ja projektit.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap" rel="stylesheet">
-
 </head>
 <body>
 
-<!-- NAVIGAATIO -->
-<nav class="navbar">
-  <div class="nav-container">
-    <a href="index.html" class="nav-logo">Juho Leppäkangas</a>
-    <div class="nav-links">
-      <a href="index.html">Etusivu</a>
-      <a href="portfolio.html">JAMK ticorporate Portfolio</a>
-      <a href="cv/CV_Juho_Leppakangas1.pdf" target="_blank" class="cta-button">
-    📄 Avaa CV
-</a>
-    </div>
-  </div>
-</nav>
-
-<section class="hero">
-  <div class="hero-content">
-    <div class="hero-text">
-      <h1>Juho Leppäkangas</h1>
-      <h2>Data Analyst / Data Engineer (Cloud & Analytics)</h2>
-      
-      <p>
-        Olen tietojenkäsittelyn tradenomi, joka on erikoistunut pilvipalveluihin ja datan käsittelyyn muunmuassa AWS-ympäristössä. Minulla on käytännön kokemusta datan keräämisestä, käsittelystä ja visualisoinnista osana oikeita projekteja, ja ymmärrän datan koko elinkaaren datan ingestoinnista analyysiin ja päätöksenteon tukemiseen.
-
-Harjoittelussani työskentelin AWS Security Lake -ratkaisun parissa, jossa hyödynsin Lake Formation -oikeuksienhallintaa, kirjoitin Athena SQL -kyselyitä ja rakensin QuickSight-dashboardeja. Visualisoin datasta poikkeamia ja haavoittuvuuksia, mikä auttoi tuomaan keskeiset havainnot selkeästi esille ja tukemaan päätöksentekoa.
-
-Teknisen osaamisen lisäksi minua motivoi erityisesti datan hyödyntäminen liiketoiminnan kehittämisessä. Pyrin ymmärtämään datan taustalla olevia ilmiöitä ja tuottamaan selkeitä oivalluksia, jotka tukevat päätöksentekoa.
-      </p>
-    </div>
-    <div class="hero-images">
-      <img src="images/cloudops.png" alt="CloudOps" title="AWS CloudOps">
-      <img src="images/cloudprac.png" alt="CloudPractitioner" title="AWS Cloud Practitioner">
-    </div>
-  </div>
-</section>
-
-<!-- TYÖHARJOITTELU -->
-<section class="experience-section">
-  <h2>Työharjoittelu</h2>
-  <div class="experience-content">
-    <div class="experience-text">
-      <p>
-        Harjoittelussa pääsin tekemään töitä <strong>AWS Security Lake</strong> -palvelun, <strong>Lake Formation</strong> -oikeuksien ja <strong>Athena SQL</strong> -kyselyiden parissa. Visualisoin AWS-tilien haavoittuvuuksia ja poikkeamia QuickSight-dashboardeilla, mahdollistaen nopeamman reagoinnin tietoturvariskeihin ja päätöksenteon tukemisen.
-      </p>
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="index.html">J. Leppäkangas</a>
+    <nav aria-label="Päävalikko">
       <ul>
-        <li>AWS Security Lake ja Lake Formation</li>
-        <li>Athena SQL -kyselyt</li>
-        <li>Quicksight dashboardien luonti ja visualisointi. (Quicksight ei tunnista sisäkkäisiä JSON-rakenteita ilman puhdistamista)</li>
-        <li>Monitorointi ja tietoturva CloudOps -näkökulmasta</li>
+        <li><a href="index.html" aria-current="page">Etusivu</a></li>
+        <li><a href="portfolio.html">Projektit</a></li>
       </ul>
-    </div>
-    <div class="experience-images">
-      <img src="images/securtiity.png" alt="Quicksight dashboard" title="Dashboard">
-
-    </div>
+    </nav>
   </div>
-</section>
+</header>
 
-<!-- OPINNÄYTETYÖ -->
-<section class="experience-section">
-  <h2>Opinnäytetyö</h2>
-  <div class="experience-content">
-    <div class="experience-text">
-      <p>
-        Opinnäytetyössä tutkin <strong>AWS Datajärvien</strong> toimintaa. Rakensin automatisoidun dataputken (API → Lambda → datajärvi), jonka avulla kerätty ja analysoitu data visualisoitiin interaktiivisiin QuickSight-dashboardeihin.
-      </p>
-      <ul>
-        <li>AWS Datajärvet ja Lake Formation</li>
-        <li>Athena SQL</li>
-        <li>CSV-datasetin keruu ja analysointi</li>
-        <li>Sportradar API -datan automaattinen haku Lambda funktiolla, jota pyöräytetään kello 7:00 aamulla <strong>EventBridgen </strong> avulla</li>
-        <li>Interaktiiviset dashboardit</li>
-      </ul>
-    </div>
-    <div class="experience-images">
-      <img src="images/QS_kaavio.jpg" alt="Quicksight analyysi" title="Infrastruktuuri">
-      <img src="images/QS_2.jpg" alt="Datajärvi kaavio" title="Datajärvi">
-      <img src="images/QS_3.jpg" alt="Quicksight analyysi" title="Analyysi">
-      <img src="images/QS_menestyjat.jpg" alt="Quicksight analyysi" title="Analyysi">
+<main>
+  <!-- Esittely -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <h1><span>Meitsin portfolio</span></h1>
+        <p class="role">Tietojenkäsittelyn tradenomi – pilvipalvelut </p>
+        <p>Olen tietojenkäsittelyn tradenomi, joka on erikoistunut pilvipalveluihin ja datan käsittelyyn muunmuassa AWS-ympäristössä. Minulla on käytännön kokemusta datan keräämisestä, käsittelystä ja visualisoinnista osana oikeita projekteja, ja ymmärrän datan koko elinkaaren datan ingestoinnista analyysiin ja päätöksenteon tukemiseen. <br><br>
 
+        Luonteeltani olen positiivinen ja huumorintajuinen kaveri ja minulla on hyvät vuorovaikutustaidot<br><br>
+
+        Harrastelen kalastusta ja lenkkeilyä sekä jonkin verran videopelejä</p>
+        <div class="btns">
+          <a class="btn" href="portfolio.html">Katso projektit</a>
+          <a class="btn ghost" href="mailto:etunimi.sukunimi@email.fi">Ota yhteyttä</a>
+        </div>
+      </div>
+      <div class="photo">
+        <img src="images/meiti.jpg" alt="Etunimi Sukunimi" width="340" height="425">
+      </div>
     </div>
+  </section>
+
+  <!-- Tietoa -->
+  <section class="band" id="tietoa">
+    <div class="wrap two-col">
+      <h2>Minusta</h2>
+      <div>
+        <p>Kerro tähän tarkemmin taustastasi, vahvuuksistasi ja siitä, mikä sinua motivoi. Työnantaja lukee tämän osion todennäköisesti tarkimmin, joten kirjoita konkreettisesti.</p>
+        <ul class="facts">
+          <li>Koulutus: Jyväskylän ammattikorkeakoulu, Tietojenkäsittelyn tradenomi, 2025</li>
+          <li>Sijainti: Jyväskylä, valmis muuttamaan / etätyöhön</li>
+          <li>Kielet: suomi (äidinkieli), englanti (hyvä), espanja (alkeet)</li>
+        </ul>
+        <ul class="tags" aria-label="Taidot">
+          <li>AWS</li>
+          <li>Python</li>
+          <li>Linux</li>
+          <li>Git</li>
+          <li>SQL</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sertifikaatit -->
+  <section id="sertifikaatit">
+    <div class="wrap">
+      <h2>AWS-sertifikaatit</h2>
+      <div class="certs">
+        <div class="cert">
+          <img src="images/cloudprac.png" alt="AWS Certified Cloud Practitioner -badge" width="96" height="96">
+          <div>
+            <h3>AWS Certified Cloud Practitioner</h3>
+            <p>Suoritettu: 8/2025</p>
+          </div>
+        </div>
+        <div class="cert">
+          <img src="images/cloudops.png" alt="AWS Certified CloudOps Associate -badge" width="96" height="96">
+          <div>
+            <h3>AWS Certified Solutions Architect – Associate</h3>
+            <p>Suoritettu: 10/2025</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Työharjoittelu -->
+  <section class="band" id="tyoharjoittelu">
+    <div class="wrap two-col">
+      <h2>Työharjoittelu</h2>
+      <div class="timeline">
+        <div class="item">
+          <p class="when">08/2025 – 12/2025</p>
+          <h3>Pilvipalvelut, Skillwell Oy</h3>
+          <p>Työharjoittelussa työskentelin AWS-pilvipalveluiden ja tietoturvadatan parissa. Pääsin työskentelemään muun muassa AWS Security Laken, AWS Lake Formationin, Amazon Athenan ja Amazon QuickSightin kanssa. Hyödynsin Athena SQL -kyselyitä datan käsittelyssä ja rakensin QuickSightilla dashboardeja, joiden avulla sisäisten AWS-tilien haavoittuvuuksia ja poikkeamia voitiin visualisoida. Dashboardit helpottivat tietoturvariskien seurantaa ja analysointia. <br><br>
+
+Osallistuin myös valmiin Amazon Bedrock -chatbotin integrointiin Security Lake -dataan. Tavoitteena oli mahdollistaa datan tutkiminen luonnollisella kielellä suomeksi. Integraation yhteydessä tein tarvittavia koodimuutoksia, kuten AWS-alueiden (region) vaihtamisen, OpenSearch Collectioniin tarvittavien indeksien luomisen sekä agentin muokkaamisen käyttämään Claude 3 -mallia. <br><br>
+
+Harjoittelun aikana tutustuin lisäksi Terraformiin ja Terragrantiin infrastruktuurin hallinnassa. Hyödynsin Dockeria paikallisen testiympäristön rakentamiseen ja eri palveluiden ajamiseen LocalStackin avulla. Lisäksi tutustuin AWS Control Toweriin ja sen hyödyntämiseen AWS-ympäristöjen hallinnassa.</p>
+          <ul class="tags">
+            <li>Security Lake</li>
+            <li>IaC (CDK & Terraform)</li>
+            <li>Visualisointi (Quicksight) & SQL</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Opinnäytetyö -->
+  <section id="opinnaytetyo">
+    <div class="wrap two-col">
+      <h2>Opinnäytetyö</h2>
+      <div>
+        <h3>AWS QuickSight ja datajärvet: Tietojärvidatan visualisointi Quicksightissa</h3>
+        <p class="meta">Jyväskylän ammattikorkeakoulu, 2025</p>
+        <p>Opinnäytetyössäni tutkin AWS Data Lake -ratkaisujen toimintaa ja keskityin erityisesti datan visualisointiin. Työn alussa tutustuin Amazon QuickSight -palveluun ja sen ominaisuuksiin rakentamalla koontinäyttöjä valmiin NHL Draft -datasetin pohjalta. <br><br>
+
+Tämän jälkeen rakensin automatisoidun dataputken, jossa AWS Lambdalla haettiin NHL-dataa Sportradar API ja tallennettiin se Amazon S3 partitioituna päivämäärän mukaan. Lambda-funktio ajastettiin suoritettavaksi päivittäin aamuisin, jolloin edellisen yön NHL-otteluiden tulokset olivat saatavilla. <br><br>
+
+Lopuksi rakensin interaktiivisen koontinäytön, jonka avulla yön aikana pelattujen NHL-otteluiden tuloksia ja dataa pystyi tarkastelemaan visuaalisesti. Työssä yhdistyivät <strong>datan automatisoitu kerääminen</strong>,<strong> AWS pilvipalvelut</strong>, <strong>datan tallennus</strong> ja <strong>visualisointi.</strong></p>
+        <div class="gallery">
+          <figure>
+            <img src="images/QS_kaavio.jpg" alt="Opinnäytetyö: kuvan 1 kuvaus" width="600" height="450">
+            <figcaption>Infrastruktuuri</figcaption>
+          </figure>
+          <figure>
+            <img src="images/QS_2.jpg" alt="Opinnäytetyö: kuvan 2 kuvaus" width="600" height="450">
+            <figcaption>Visualisointi 1</figcaption>
+          </figure>
+          <figure>
+            <img src="images/QS_3.jpg" alt="Opinnäytetyö: kuvan 3 kuvaus" width="600" height="450">
+            <figcaption>Visualisointi 2</figcaption>
+          </figure>
+          <figure>
+            <img src="images/QS_menestyjat.jpg" alt="Opinnäytetyö: kuvan 4 kuvaus" width="600" height="450">
+            <figcaption>Visualisointi 3</figcaption>
+          </figure>
+        <a class="btn ghost" href="https://urn.fi/URN:NBN:fi:amk-2025060621104" target="_blank" rel="noopener">Lue opinnäytetyö (Theseus)</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="band">
+  <div class="wrap">
+    <p>© 2026 Juho Leppäkangas</p>
+    <ul class="contact">
+      <li><img src="images/communication.png" alt="Sähköposti" width="28" height="28"><span>leppisjii@gmail.com</span></li>
+      <li>
+        <svg viewBox="0 0 24 24" width="28" height="28" role="img" aria-label="Puhelin"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.6 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.6 3.6a1 1 0 0 1-.25 1z"/></svg>
+        <span>040 123 4567</span>
+      </li>
+    </ul>
   </div>
-</section>
-
-<!-- CTA nappi Portfolioon -->
-<section style="text-align:center; margin:60px 0;">
-  <a href="portfolio.html" class="cta-button">Tutustu Ticorporate projektiin</a>
-</section>
+</footer>
 
 </body>
 </html>
