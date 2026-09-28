@@ -14,11 +14,12 @@
 
 <header class="nav">
   <div class="wrap">
-    <a class="logo" href="index.html">J. Leppäkangas</a>
+    <a class="logo" href="index.html">Portfolio</a>
     <nav aria-label="Päävalikko">
       <ul>
         <li><a href="index.html" aria-current="page">Etusivu</a></li>
-        <li><a href="portfolio.html">Projektit</a></li>
+        <li><a href="portfolio.html">Ticorporate projekti</a></li>
+        <li><a class="cv-link" href="cv/CV_Juho_Leppakangas1.pdf" target="_blank" rel="noopener">CV</a></li>
       </ul>
     </nav>
   </div>
@@ -29,17 +30,14 @@
   <section class="hero">
     <div class="wrap">
       <div>
-        <h1><span>Meitsin portfolio</span></h1>
+        <h1><span>Juho Leppäkangas</span></h1>
         <p class="role">Tietojenkäsittelyn tradenomi – pilvipalvelut </p>
         <p>Olen tietojenkäsittelyn tradenomi, joka on erikoistunut pilvipalveluihin ja datan käsittelyyn muunmuassa AWS-ympäristössä. Minulla on käytännön kokemusta datan keräämisestä, käsittelystä ja visualisoinnista osana oikeita projekteja, ja ymmärrän datan koko elinkaaren datan ingestoinnista analyysiin ja päätöksenteon tukemiseen. <br><br>
 
         Luonteeltani olen positiivinen ja huumorintajuinen kaveri ja minulla on hyvät vuorovaikutustaidot<br><br>
 
         Harrastelen kalastusta ja lenkkeilyä sekä jonkin verran videopelejä</p>
-        <div class="btns">
-          <a class="btn" href="portfolio.html">Katso projektit</a>
-          <a class="btn ghost" href="mailto:etunimi.sukunimi@email.fi">Ota yhteyttä</a>
-        </div>
+
       </div>
       <div class="photo">
         <img src="images/meiti.jpg" alt="Etunimi Sukunimi" width="340" height="425">
@@ -52,7 +50,16 @@
     <div class="wrap two-col">
       <h2>Minusta</h2>
       <div>
-        <p>Kerro tähän tarkemmin taustastasi, vahvuuksistasi ja siitä, mikä sinua motivoi. Työnantaja lukee tämän osion todennäköisesti tarkimmin, joten kirjoita konkreettisesti.</p>
+        <p>Olen tietojenkäsittelyn tradenomi ja alanvaihtaja, joka on rakentanut tietoisesti uutta uraa IT-alalle. Alanvaihto on opettanut minulle paljon uuden oppimisesta ja vahvistanut haluani kehittää itseäni ja tulla alan ammattilaiseksi. <br><br>
+
+Luonteeltani olen positiivinen, huumorintajuinen ja helposti lähestyttävä. Minulla on hyvät vuorovaikutustaidot, ja viihdyn hyvin sekä itsenäisessä työskentelyssä että osana tiimiä. Työskentelyssä pidän tärkeänä avointa kommunikaatiota ja hyvää ilmapiiriä. <br><br>
+
+Olen utelias ja käytännönläheinen oppija. Erityisesti teknisten ongelmien selvittäminen kiinnostaa minua – pidän siitä, että saan ottaa uuden teknologian haltuun ja selvittää, miten sitä voidaan hyödyntää käytännössä. En myöskään pelkää tarttua itselleni ennestään tuntemattomiin asioihin. <br><br>
+
+IT-alalla minua kiinnostavat erityisesti pilvipalvelut, data ja tietoturva. Tavoitteenani on päästä kehittämään osaamistani käytännön työssä ja kasvaa monipuoliseksi IT-alan ammattilaiseksi. <br><br>
+
+Vapaa-ajalla rentoudun kalastuksen ja lenkkeilyn parissa. Pelaan myös jonkin verran videopelejä.
+        </p>
         <ul class="facts">
           <li>Koulutus: Jyväskylän ammattikorkeakoulu, Tietojenkäsittelyn tradenomi, 2025</li>
           <li>Sijainti: Jyväskylä, valmis muuttamaan / etätyöhön</li>
@@ -127,25 +134,25 @@ Harjoittelun aikana tutustuin lisäksi Terraformiin ja Terragrantiin infrastrukt
 Tämän jälkeen rakensin automatisoidun dataputken, jossa AWS Lambdalla haettiin NHL-dataa Sportradar API ja tallennettiin se Amazon S3 partitioituna päivämäärän mukaan. Lambda-funktio ajastettiin suoritettavaksi päivittäin aamuisin, jolloin edellisen yön NHL-otteluiden tulokset olivat saatavilla. <br><br>
 
 Lopuksi rakensin interaktiivisen koontinäytön, jonka avulla yön aikana pelattujen NHL-otteluiden tuloksia ja dataa pystyi tarkastelemaan visuaalisesti. Työssä yhdistyivät <strong>datan automatisoitu kerääminen</strong>,<strong> AWS pilvipalvelut</strong>, <strong>datan tallennus</strong> ja <strong>visualisointi.</strong></p>
-        <div class="gallery">
-          <figure>
-            <img src="images/QS_kaavio.jpg" alt="Opinnäytetyö: kuvan 1 kuvaus" width="600" height="450">
-            <figcaption>Infrastruktuuri</figcaption>
-          </figure>
-          <figure>
-            <img src="images/QS_2.jpg" alt="Opinnäytetyö: kuvan 2 kuvaus" width="600" height="450">
-            <figcaption>Visualisointi 1</figcaption>
-          </figure>
-          <figure>
-            <img src="images/QS_3.jpg" alt="Opinnäytetyö: kuvan 3 kuvaus" width="600" height="450">
-            <figcaption>Visualisointi 2</figcaption>
-          </figure>
-          <figure>
-            <img src="images/QS_menestyjat.jpg" alt="Opinnäytetyö: kuvan 4 kuvaus" width="600" height="450">
-            <figcaption>Visualisointi 3</figcaption>
-          </figure>
-        <a class="btn ghost" href="https://urn.fi/URN:NBN:fi:amk-2025060621104" target="_blank" rel="noopener">Lue opinnäytetyö (Theseus)</a>
-      </div>
+        <div class="wrap">
+          <div class="gallery">
+            <figure>
+              <img src="images/QS_kaavio.jpg" alt="Infrastruktuurikaavio" width="1200" height="1000">
+              <figcaption>Infrastruktuuri</figcaption>
+            </figure>
+            <figure>
+              <img src="images/QS_2.jpg" alt="Visualisointi 1" width="1200" height="849">
+              <figcaption>Visualisointi 1</figcaption>
+            </figure>
+            <figure>
+              <img src="images/QS_3.jpg" alt="Visualisointi 2" width="1200" height="849">
+              <figcaption>Visualisointi 2</figcaption>
+            </figure>
+            <figure>
+              <img src="images/QS_menestyjat.jpg" alt="Visualisointi 3" width="1200" height="849">
+              <figcaption>Visualisointi 3</figcaption>
+            </figure>
+          </div>
     </div>
   </section>
 </main>
@@ -162,6 +169,6 @@ Lopuksi rakensin interaktiivisen koontinäytön, jonka avulla yön aikana pelatt
     </ul>
   </div>
 </footer>
-
+<script src="js/reveal.js"></script>
 </body>
 </html>
